@@ -1,0 +1,23 @@
+{
+  "name": "github-favorites",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\"> Github Favorites </h1>",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devleuuon/GithubFavorites.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devleuuon/GithubFavorites/issues"
+  },
+  "homepage": "https://github.com/devleuuon/GithubFavorites#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
