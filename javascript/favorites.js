@@ -76,6 +76,7 @@ export class FavoritesView extends Favorites {
         const addButton = this.root.querySelector('.search button') //pegando o button do html
         addButton.addEventListener('click', () => {
             const { value } = this.root.querySelector('.search input') //pegando o valor dentro do input e com click vai passar o valor para o add()
+            this.root.querySelector('header input').value = ''
             
             this.add(value) //valor vai ser passado para a função assincrona add()
         })
