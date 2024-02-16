@@ -21,7 +21,7 @@ Projeto promovido pela rocketseat para ensino de tecnologias WEB.
   <img alt="formulario" src="./assets/readme.png" width="100%">
 </p>
 
-[🔗 Clique aqui para acessar](https://spa-universe-rho-nine.vercel.app/)
+[🔗 Clique aqui para acessar](https://github-favorites-roan.vercel.app/)
 
 ## 🚀 Tecnologias
 
