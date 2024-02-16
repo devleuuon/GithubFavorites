@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
+
+    --bg-body: #000;
+    --text-color: #E1E1E6;
+    --bg-color-head: #092D38;
+    --primary-color-body: rgba(6, 22, 27, 0.50);
+    --secondary-color-body: #06181C;
+    --bg-color-input: #06181C;
+    --bg-color-button: #065E7C;
+    --button--remove-color: red;
+    --scroll-color: #4A808C;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-color);
+}
+
+.app {
+    max-width: 42.5rem;
+    margin: auto;
+    padding: 1.5rem;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.0rem;
+}
+
+header img {
+    width: 10.8rem;
+    cursor: pointer;
+}
+
+.sr-only {
+    position: absolute;
+    width: .1rem;
+    height: .1rem;
+    padding: 0;
+    margin: -1;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.search input {
+    background-color: var(--bg-color-input);
+    color: var(--text-color);
+    padding: 1.0rem;
+    border-radius: .5rem;
+    border: none;
+    width: 15.0rem;
+}
+
+.search input::placeholder {
+    color: var(--text-color);
+    line-height: 100%;
+}
+
+.search button {
+    padding: .9rem;
+    border-radius: .5rem;
+    background-color: var(--bg-color-button);
+    color: var(--text-color);
+    cursor: pointer;
+    font-weight: 700;
+    border: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    line-height: 2.4rem;
+    font-size: 1.0rem;
+}
+
+.search img {
+    width: 1.6rem;
+}
+
+/* TABLES */
+
+table {
+    max-width: 39.0rem;
+    margin: auto;
+    border-collapse: collapse; /*junta as colunas*/
+    border: .1rem solid var(--scroll-color);
+}
+
+table * {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+table th {
+    background-color: var(--bg-color-head);
+    text-align: start;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+}
+
+table th:nth-child(1) {
+    border-top-left-radius: .4rem;
+}
+
+table th:nth-child(4) {
+    border-top-right-radius: .4rem;
+}
+
+table td {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+table tr:nth-child(even) { /* even são os ímpares*/
+    background-color: var(--primary-color-body);
+}
+
+table tr:nth-child(odd) { /* odd são os pares*/
+    background-color: var(--secondary-color-body);
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 1.0rem;
+}
+
+.user img {
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.user p, span {
+    font-size: 1.0rem;
+}
+
+.user p {
+    font-weight: 700;
+}
+
+tbody button {
+    background-color: transparent;
+    border: none;
+    color: var(--button--remove-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+tbody a {
+    text-decoration: none;
+}
+
+.repositories, .followers {
+    text-align: center;
+}
+
+.table-scroll {
+    max-height: 40.0rem;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent; 
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4A808C;
+    border-radius: 10px;
+}
+  
+.no-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: 20.0rem;
+  }
+  
+  .no-user img {
+    width: 10.2rem;
+  }
+
+  .no-user span {
+    font-size: 2.0rem;
+  }
+
+
+@media (min-width:70.0rem) {
+    .app {
+        max-width: 117.0rem;
+    }
+    
+    header {
+        max-width: 112.0rem;
+        margin: 9.5rem auto 8.7rem;
+    }
+
+    header img {
+        width: 18.6rem;
+    }
+
+    .search input {
+        width: 46.2rem;
+        height: 4.8rem;
+    }
+
+    .search button {
+        width: 17.0rem;
+        height: 4.8rem;
+        font-size: 1.4rem;
+        gap: .8rem;
+    }
+
+    .search img {
+        width: 2.4rem;
+    }
+
+    .search input::placeholder {
+        font-size: 1.6rem;
+    }
+
+    table {
+        min-width: 112.0rem;
+    }
+
+    .table-scroll {
+        max-height: 40.0rem;
+        overflow-y: auto;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background-color: transparent; 
+    }
+    
+    ::-webkit-scrollbar {
+        width: 6px;
+        background: transparent;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #4A808C;
+        border-radius: 10px;
+    }
+
+    thead th {
+        font-size: 2.0rem;
+    }
+
+    .user img {
+        width: 5.6rem;
+    }
+
+    .user p, .user span, .repositories, .followers, .remove {
+        font-size: 2.0rem;
+    }
+
+    .repositories, .followers {
+        text-align: start;
+        font-weight: 700;
+    }
+
+    .no-user {
+        gap: 4rem;
+        height: 30.0rem;
+      }
+      
+      .no-user img {
+        width: 13.2rem;
+      }
+    
+      .no-user span {
+        font-size: 4.0rem;
+      }
+}
+

@@ -1,0 +1,10 @@
+criar classe com a lógica e os dados estruturados.
+classe que vai criar a visualização e eventos do HTML
+criar função de remover linha
+criar função de add linha pegando o conteudo do html e passando para o js
+criar função com a entrada de dados do github e acessando com api
+criar update, que vai conter função de criar e remover linhas. com atualização das linhas com os dados de entradas do github
+criar função delete, para filtrar as entradas do array
+criar função load para salvar dados no locaStorage
+criar função assincrona para add os favoritos na linha 
+criar função save para salvar os dados
